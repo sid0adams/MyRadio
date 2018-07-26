@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class MainViewController: UIViewController {
 
@@ -23,7 +24,6 @@ class MainViewController: UIViewController {
     var selectedStation = -1
     
     
-    @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var StationsTable: UITableView!
     
     @IBOutlet weak var BarImage: UIImageView!
@@ -54,6 +54,7 @@ class MainViewController: UIViewController {
             BarLabel.text = "Загрузка"
             DispatchQueue.main.async {
                 self.player.radioURL = self.stations[self.selectedStation].url
+                self.player.togglePlaying()
             }
         }
     }
@@ -61,16 +62,68 @@ class MainViewController: UIViewController {
         ImageLoader.sharedLoader.imageForUrl(urlString: stations[selectedStation].imageUrl.absoluteString, completionHandler: {(image: UIImage?, url: String) in
             DispatchQueue.main.async {
                 self.BarImage.image = image
+                self.SetLockScreen()
             }})
         BarLabel.text = stations[selectedStation].name
     }
+    func errorBar() {
+        BarLabel.text = "error"
+    }
+    func SetLockScreen(){
+        var nowPlayingInfo = [String : Any]()
+        if let image = BarImage?.image {
+            nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(image: image)
+        }
+        
+        if let title = BarLabel?.text {
+            nowPlayingInfo[MPMediaItemPropertyTitle] = title
+        }
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+    }
     
     @IBAction func PreviousAction() {
-        setPlay(index: selectedStation - 1 + stations.count)
+        if(selectedStation == -1){
+            setPlay(index: stations.count - 1)
+        }
+        else {
+            setPlay(index: selectedStation - 1 + stations.count)
+        }
     }
     
     @IBAction func NextAction() {
         setPlay(index: selectedStation + 1)
+    }
+    @IBAction func PlayPauseAction(_ sender: Any) {
+        
+        if(player.playbackState == FRadioPlaybackState.playing) {
+            player.pause()
+            PlayBtn.isSelected = false
+        }
+        else {
+            if(player.state == FRadioPlayerState.urlNotSet) {
+                setPlay(index: 0)
+                player.play()
+            }
+            player.togglePlaying()
+            PlayBtn.isSelected = true
+        }
+    }
+    
+    func setupRemoteCommandCenter() {
+        let commandCenter = MPRemoteCommandCenter.shared()
+        commandCenter.playCommand.addTarget { event in
+            return .success
+        }
+        commandCenter.pauseCommand.addTarget { event in
+            return .success
+        }
+        commandCenter.nextTrackCommand.addTarget { event in
+            return .success
+        }
+        commandCenter.previousTrackCommand.addTarget { event in
+            return .success
+        }
     }
     
     
@@ -120,12 +173,13 @@ extension MainViewController :FRadioPlayerDelegate{
     func radioPlayer(_ player: FRadioPlayer, playerStateDidChange state: FRadioPlayerState) {
         switch state {
         case .loadingFinished:
-            player.togglePlaying()
             setBar()
-            return
+            player.play()
+            SetLockScreen()
+            PlayBtn.isSelected = true
         case .error:
             errorBar()
-            return
+            PlayBtn.isSelected = true
         default:
             return
         }

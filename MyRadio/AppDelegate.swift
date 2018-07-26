@@ -12,14 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let mainViewController = MainViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        UIApplication.shared.beginReceivingRemoteControlEvents()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let MainView = MainViewController()
-        window?.rootViewController = MainView
+        //mainViewController = MainViewController()
+        window?.rootViewController = mainViewController
         
         return true
     }
@@ -46,6 +47,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    override func remoteControlReceived(with event: UIEvent?) {
+        super.remoteControlReceived(with: event)
+        guard let event = event, event.type == UIEventType.remoteControl else { return }
+        
+        switch event.subtype {
+        case .remoteControlPlay:
+            FRadioPlayer.shared.play()
+        case .remoteControlPause:
+            FRadioPlayer.shared.pause()
+        case .remoteControlTogglePlayPause:
+            FRadioPlayer.shared.togglePlaying()
+        case .remoteControlNextTrack:
+            mainViewController.NextAction()
+        case .remoteControlPreviousTrack:
+            mainViewController.PreviousAction()
+        default:
+            break
+        }
+    }
 
 }
 

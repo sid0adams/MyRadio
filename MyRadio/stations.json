@@ -18,5 +18,65 @@
  "name" : "Питер FM Rock",
  "url" : "http://radiocast.muz-lab.ru/VTJT.mp3",
  "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2017-08/1503983554_piterfmspb-min.jpg"
+ },
+ {
+ "name" : "ULTRA",
+ "url" : "http://nashe1.hostingradio.ru/ultra-128.mp3",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-06/1402038759_1.jpg"
+ },
+ {
+ "name" : "Biker-FM",
+ "url" : "http://stream3.radiostyle.ru:8001/biker-fm",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2016-12/1481972577_logo.png"
+ },
+ {
+ "name" : "Studio21",
+ "url" : "https://icecast-studio21.cdnvideo.ru/S21cl_1r",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2018-06/1528264293_st21_logo_v.jpg"
+ },
+ {
+ "name" : "Hip-Hop Barada",
+ "url" : "http://listen1.myradio24.com:9000/4455",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2015-06/1434630633_e12f5eb00758.jpg"
+ },
+ {
+ "name" : "DFM",
+ "url" : "http://icecast.radiodfm.cdnvideo.ru:8000/dfm_m.aac",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-07/1406031947_logo.png"
+ },
+ {
+ "name" : "Радио Premium",
+ "url" : "http://listen.rpfm.ru:9000/premium192",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2012-01/thumbs/1327742333_l_ea5f447b.jpg"
+ },
+ {
+ "name" : "EDM Radio",
+ "url" : "http://s1.edmradio.ru:8000/live",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2016-01/1452586272_edm100.jpg"
+ },
+ {
+ "name" : "Русское Радио",
+ "url" : "http://icecast.russkoeradio.cdnvideo.ru:8000/rr_m.mp3",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-07/1406029807_logo.png"
+ },
+ {
+ "name" : "ENERGY",
+ "url" : "http://ic4.101.ru:8000/v1_1?type=.mp3",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-07/1406188703_logo.png"
+ },
+ {
+ "name" : "Авторадио",
+ "url" : "http://91.207.59.26:8000/a100",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-07/1406188567_logo.png"
+ },
+ {
+ "name" : "Дача",
+ "url" : "http://listen13.vdfm.ru:8000/dacha?type=.mp3",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-07/1406030319_logo.png"
+ },
+ {
+ "name" : "Атмосфера",
+ "url" : "http://185.53.169.128:8000/192",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2014-12/1418277840_517fbdec446783602bd022eaa9f8b81f.jpg"
  }
 ]
