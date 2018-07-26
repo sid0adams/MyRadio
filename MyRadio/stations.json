@@ -1,0 +1,22 @@
+[
+  {
+  "name" : "Наше Радио",
+  "url" : "http://nashe1.hostingradio.ru/nashe-128.mp3",
+  "imageUrl" : "http://toplogos.ru/images/logo-nashe-radio.gif"
+  },
+  {
+  "name" : "Юмор фм",
+  "url" : "http://ic4.101.ru:8000/v5_1",
+  "imageUrl" : "http://onlayn-radio.ru/uploads/posts/2012-02/thumbs/1328088250_humor_fm.png"
+  },
+  {
+  "name" : "Classic Rock",
+  "url" : "http://rfcmedia.streamguys1.com/classicrock.mp3",
+  "imageUrl" : "none"
+ },
+ {
+ "name" : "Питер FM Rock",
+ "url" : "http://radiocast.muz-lab.ru/VTJT.mp3",
+ "imageUrl" : "https://onlayn-radio.ru/uploads/posts/2017-08/1503983554_piterfmspb-min.jpg"
+ }
+]

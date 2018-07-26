@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		1FF32BCC2109EFAE0042744D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BCB2109EFAE0042744D /* AppDelegate.swift */; };
-		1FF32BCE2109EFAE0042744D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BCD2109EFAE0042744D /* ViewController.swift */; };
-		1FF32BD12109EFAE0042744D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BCF2109EFAE0042744D /* Main.storyboard */; };
 		1FF32BD32109EFAF0042744D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BD22109EFAF0042744D /* Assets.xcassets */; };
 		1FF32BD62109EFAF0042744D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BD42109EFAF0042744D /* LaunchScreen.storyboard */; };
+		1FF32BDF2109F05E0042744D /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BDE2109F05E0042744D /* Station.swift */; };
+		1FF32BE12109F0730042744D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BE02109F0730042744D /* Track.swift */; };
+		1FF32BE32109F0890042744D /* FileWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BE22109F0890042744D /* FileWork.swift */; };
+		1FF32BE52109F0AE0042744D /* stations.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BE42109F0AE0042744D /* stations.json */; };
+		1FF32BEC2109F1170042744D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BEA2109F1170042744D /* MainViewController.swift */; };
+		1FF32BED2109F1170042744D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BEB2109F1170042744D /* MainViewController.xib */; };
+		1FF32BF12109F1530042744D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BEF2109F1530042744D /* TableViewCell.swift */; };
+		1FF32BF22109F1530042744D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BF02109F1530042744D /* TableViewCell.xib */; };
+		1FF32BF62109F2580042744D /* FRadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BF32109F2580042744D /* FRadioPlayer.swift */; };
+		1FF32BF72109F2580042744D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BF42109F2580042744D /* Reachability.swift */; };
+		1FF32BF82109F2580042744D /* FRadioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BF52109F2580042744D /* FRadioAPI.swift */; };
+		1FF32BFB2109FC190042744D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF32BFA2109FC190042744D /* ImageLoader.swift */; };
+		1FF32BFE210A1CBE0042744D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FF32BFD210A1CBE0042744D /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1FF32BC82109EFAE0042744D /* MyRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF32BCB2109EFAE0042744D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FF32BCD2109EFAE0042744D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1FF32BD02109EFAE0042744D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FF32BD22109EFAF0042744D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF32BD52109EFAF0042744D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FF32BD72109EFAF0042744D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FF32BDE2109F05E0042744D /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		1FF32BE02109F0730042744D /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		1FF32BE22109F0890042744D /* FileWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWork.swift; sourceTree = "<group>"; };
+		1FF32BE42109F0AE0042744D /* stations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stations.json; sourceTree = "<group>"; };
+		1FF32BEA2109F1170042744D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1FF32BEB2109F1170042744D /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		1FF32BEF2109F1530042744D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1FF32BF02109F1530042744D /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		1FF32BF32109F2580042744D /* FRadioPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRadioPlayer.swift; sourceTree = "<group>"; };
+		1FF32BF42109F2580042744D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		1FF32BF52109F2580042744D /* FRadioAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRadioAPI.swift; sourceTree = "<group>"; };
+		1FF32BFA2109FC190042744D /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		1FF32BFD210A1CBE0042744D /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +60,7 @@
 		1FF32BBF2109EFAE0042744D = {
 			isa = PBXGroup;
 			children = (
+				1FF32BFD210A1CBE0042744D /* README.txt */,
 				1FF32BCA2109EFAE0042744D /* MyRadio */,
 				1FF32BC92109EFAE0042744D /* Products */,
 			);
@@ -54,14 +77,64 @@
 		1FF32BCA2109EFAE0042744D /* MyRadio */ = {
 			isa = PBXGroup;
 			children = (
+				1FF32BF92109FBF20042744D /* libs */,
+				1FF32BEE2109F1450042744D /* Cell */,
+				1FF32BE92109F1060042744D /* Main */,
+				1FF32BE72109F0DF0042744D /* FRadio */,
+				1FF32BDD2109F03D0042744D /* Model */,
 				1FF32BCB2109EFAE0042744D /* AppDelegate.swift */,
-				1FF32BCD2109EFAE0042744D /* ViewController.swift */,
-				1FF32BCF2109EFAE0042744D /* Main.storyboard */,
 				1FF32BD22109EFAF0042744D /* Assets.xcassets */,
 				1FF32BD42109EFAF0042744D /* LaunchScreen.storyboard */,
 				1FF32BD72109EFAF0042744D /* Info.plist */,
+				1FF32BE42109F0AE0042744D /* stations.json */,
 			);
 			path = MyRadio;
+			sourceTree = "<group>";
+		};
+		1FF32BDD2109F03D0042744D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FF32BDE2109F05E0042744D /* Station.swift */,
+				1FF32BE02109F0730042744D /* Track.swift */,
+				1FF32BE22109F0890042744D /* FileWork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FF32BE72109F0DF0042744D /* FRadio */ = {
+			isa = PBXGroup;
+			children = (
+				1FF32BF52109F2580042744D /* FRadioAPI.swift */,
+				1FF32BF32109F2580042744D /* FRadioPlayer.swift */,
+				1FF32BF42109F2580042744D /* Reachability.swift */,
+			);
+			path = FRadio;
+			sourceTree = "<group>";
+		};
+		1FF32BE92109F1060042744D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1FF32BEA2109F1170042744D /* MainViewController.swift */,
+				1FF32BEB2109F1170042744D /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1FF32BEE2109F1450042744D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1FF32BEF2109F1530042744D /* TableViewCell.swift */,
+				1FF32BF02109F1530042744D /* TableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1FF32BF92109FBF20042744D /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				1FF32BFA2109FC190042744D /* ImageLoader.swift */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +169,14 @@
 				TargetAttributes = {
 					1FF32BC72109EFAE0042744D = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -122,9 +203,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF32BE52109F0AE0042744D /* stations.json in Resources */,
+				1FF32BF22109F1530042744D /* TableViewCell.xib in Resources */,
 				1FF32BD62109EFAF0042744D /* LaunchScreen.storyboard in Resources */,
 				1FF32BD32109EFAF0042744D /* Assets.xcassets in Resources */,
-				1FF32BD12109EFAE0042744D /* Main.storyboard in Resources */,
+				1FF32BFE210A1CBE0042744D /* README.txt in Resources */,
+				1FF32BED2109F1170042744D /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +219,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF32BCE2109EFAE0042744D /* ViewController.swift in Sources */,
+				1FF32BE32109F0890042744D /* FileWork.swift in Sources */,
+				1FF32BDF2109F05E0042744D /* Station.swift in Sources */,
+				1FF32BFB2109FC190042744D /* ImageLoader.swift in Sources */,
+				1FF32BF82109F2580042744D /* FRadioAPI.swift in Sources */,
 				1FF32BCC2109EFAE0042744D /* AppDelegate.swift in Sources */,
+				1FF32BF12109F1530042744D /* TableViewCell.swift in Sources */,
+				1FF32BE12109F0730042744D /* Track.swift in Sources */,
+				1FF32BEC2109F1170042744D /* MainViewController.swift in Sources */,
+				1FF32BF72109F2580042744D /* Reachability.swift in Sources */,
+				1FF32BF62109F2580042744D /* FRadioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1FF32BCF2109EFAE0042744D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FF32BD02109EFAE0042744D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1FF32BD42109EFAF0042744D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
